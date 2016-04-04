@@ -1,0 +1,46 @@
+{
+  "name": "htmlproject",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ahmed Ahmed"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ahmed-ahmed/empty-html-project",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "toastr": "~2.1.2",
+    "angular": "~1.5.3",
+    "angular-route": "~1.5.3",
+    "bootstrap": "~3.3.6",
+    "Ionicons": "ionicons#~2.0.1",
+    "font-awesome": "~4.5.0",
+    "fastclick": "~1.0.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "fastclick": {
+      "main": [
+        "lib/fastclick.js"
+      ]
+    }
+  }
+}
