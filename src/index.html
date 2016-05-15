@@ -4,16 +4,25 @@
     <meta charset="utf-8">
     <title>Hello World</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- angular material   -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/toastr/toastr.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.css" />
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../bower_components/angucomplete-alt/angucomplete-alt.css" />
+    <link rel="stylesheet" href="../bower_components/angular-date-picker/angular-date-picker.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="/src/main.css">
     <link rel="stylesheet" href="/src/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/src/bower_components/angular/angular-csp.css">
     <link rel="stylesheet" href="/src/plugins/bootstrap-slider/slider.css">
     <link rel="stylesheet" href="/src/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
     <link rel="stylesheet" href="/src/plugins/datepicker/datepicker3.css">
@@ -27,7 +36,6 @@
     <link rel="stylesheet" href="/src/plugins/morris/morris.css">
     <link rel="stylesheet" href="/src/plugins/pace/pace.css">
     <link rel="stylesheet" href="/src/plugins/timepicker/bootstrap-timepicker.css">
-    <link rel="stylesheet" href="/src/dist/css/skins/_all-skins.css">
     <link rel="stylesheet" href="/src/dist/css/skins/skin-black-light.css">
     <link rel="stylesheet" href="/src/dist/css/skins/skin-black.css">
     <link rel="stylesheet" href="/src/dist/css/skins/skin-blue-light.css">
@@ -40,6 +48,7 @@
     <link rel="stylesheet" href="/src/dist/css/skins/skin-red.css">
     <link rel="stylesheet" href="/src/dist/css/skins/skin-yellow-light.css">
     <link rel="stylesheet" href="/src/dist/css/skins/skin-yellow.css">
+    <link rel="stylesheet" href="/src/dist/css/skins/_all-skins.css">
     <!-- endinject -->
 
   </head>
@@ -657,6 +666,19 @@
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-date-picker/angular-date-picker.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-ui-mask/dist/mask.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
     <!-- endbower -->
         <!-- FastClick -->
         <!-- <script src="plugins/fastclick/fastclick.min.js"></script> -->
@@ -677,17 +699,27 @@
 
     <!-- inject:js -->
     <script src="/src/app.js"></script>
+    <script src="/src/appointment/appointment.js"></script>
     <script src="/src/appointments/appointments.js"></script>
+    <script src="/src/calender/calender.js"></script>
     <script src="/src/home/home.js"></script>
     <script src="/src/messages/messages.js"></script>
     <script src="/src/dist/js/app.js"></script>
     <script src="/src/dist/js/app.min.js"></script>
     <script src="/src/dist/js/demo.js"></script>
+    <script src="/src/bower_components/angular/angular.js"></script>
+    <script src="/src/bower_components/angular/angular.min.js"></script>
+    <script src="/src/bower_components/angular/index.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/gulpfile.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/index.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/karma.conf.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/protractor.config.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/protractor.travis.config.js"></script>
     <script src="/src/plugins/bootstrap-slider/bootstrap-slider.js"></script>
     <script src="/src/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js"></script>
+    <script src="/src/plugins/datepicker/bootstrap-datepicker.js"></script>
     <script src="/src/plugins/chartjs/Chart.js"></script>
     <script src="/src/plugins/chartjs/Chart.min.js"></script>
-    <script src="/src/plugins/datepicker/bootstrap-datepicker.js"></script>
     <script src="/src/plugins/daterangepicker/daterangepicker.js"></script>
     <script src="/src/plugins/daterangepicker/moment.js"></script>
     <script src="/src/plugins/daterangepicker/moment.min.js"></script>
@@ -708,6 +740,20 @@
     <script src="/src/plugins/sparkline/jquery.sparkline.js"></script>
     <script src="/src/plugins/timepicker/bootstrap-timepicker.js"></script>
     <script src="/src/dist/js/pages/dashboard.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/dist/mask.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/dist/mask.min.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/src/mask.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/test/maskSpec.js"></script>
+    <script src="/src/bower_components/angular-ui-mask/test/maskSpec.protractor.js"></script>
     <!-- endinject -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+
   </body>
 </html>

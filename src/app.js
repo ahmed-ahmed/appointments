@@ -1,4 +1,8 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 
+  'ui.mask',
+  'ngMessages',
+  'mp.datePicker',
+  'ngMaterial'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -15,6 +19,11 @@ angular.module('app', ['ngRoute'])
         templateUrl: 'appointments/appointments.html',
         controller: 'appointmentsController',
         controllerAs: 'appointments'
+      })
+      .when('/appointment', {
+        templateUrl: 'appointment/appointment.html',
+        controller: 'appointmentController',
+        controllerAs: 'appointment'
       })
       .otherwise({
         redirectTo: '/'
